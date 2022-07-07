@@ -194,11 +194,11 @@ nav {
     margin-left: auto;
 }
 
-.deposit {
+.span--deposit {
     color:  #39b385;
 }
 
-.withdraw {
+.span--withdraw {
     color: #e52a5a;
     text-decoration: line-through;
 }
