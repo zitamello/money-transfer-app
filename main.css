@@ -135,15 +135,17 @@ nav {
 
 /* MOVEMENTS */
 .movements {
-    grid-row: 2 / span 3;
+    grid-row: 1 / span 2;
     background-color: #fff;
     border-radius: 1rem;
     overflow: scroll;
+    width: 65%;
+
 }
 
 
 .movements__row {
-    padding: 2.25rem 4rem;
+    padding: 2.25rem 2rem;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #eee;
@@ -236,7 +238,7 @@ nav {
 
 
 .btn--sort {
-  margin-left: auto;
+  margin-left: 42rem;
   border: none;
   background: none;
   font-size: 1.3rem;
@@ -247,8 +249,11 @@ nav {
 /* OPERATIONS */
 .operation {
     border-radius: 1rem;
-    padding: 3rem 4rem;
+    padding: 2rem 2rem;
     color: #333;
+    width: 30%;
+    margin-left: 87.5rem;
+    margin-top: -30.2rem;
 }
 
 
@@ -330,7 +335,7 @@ h2 {
 
 .logout-timer {
     padding: 0 0.2rem;
-    margin-top: 1.5rem;
+    margin-top: -16.5rem;
     margin-right: 1.9rem;
     text-align: right;
     font-size: 1.15rem;
