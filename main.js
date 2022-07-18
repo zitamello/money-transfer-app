@@ -89,9 +89,29 @@ displayMovements(account.movements);
 const movements2 = [200, 458, -400, 3000, -650, -130, 70];
 
 const brzToUSD = 5.5;
+const brzToEur = 5.1;
 
 const conversionUSD = movements2.map(function(mov){
     return mov * brzToUSD;
 })
 
-console.log(movements2, conversionUSD);
+const convertToEUR = movements2.map(mov => mov * brzToEur);
+console.log(movements2, convertToEUR); 
+
+const movementsDescriptions = movements2.map((mov, i) => 
+    `Movement ${i + 1}: You ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(mov)}`
+);
+
+console.log(movementsDescriptions);
+
+const createUsernames = function (accounts) {
+    accounts.forEach(function(acc) {
+        acc.username = acc.owner
+        .toLowerCase()
+        .split(' ')
+        .map(name => name[0]).join('');
+    });
+};
+
+createUsernames(accounts);
+console.log(accounts);
