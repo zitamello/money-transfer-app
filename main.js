@@ -85,3 +85,13 @@ const displayMovements = function(movements, source){
 };
 
 displayMovements(account.movements);
+
+const movements2 = [200, 458, -400, 3000, -650, -130, 70];
+
+const brzToUSD = 5.5;
+
+const conversionUSD = movements2.map(function(mov){
+    return mov * brzToUSD;
+})
+
+console.log(movements2, conversionUSD);
